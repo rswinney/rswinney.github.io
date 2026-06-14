@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Robert Swinney</title>
+<meta name="description" content="Robert Swinney — Senior Associate Dean for Programs and Professor of Operations Management at Duke University's Fuqua School of Business." />
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Robert Swinney" />
+<meta property="og:title" content="Robert Swinney" />
+<meta property="og:description" content="Senior Associate Dean for Programs and Professor of Operations Management at Duke University's Fuqua School of Business." />
+<meta property="og:url" content="https://www.robertswinney.com/" />
+<meta property="og:image" content="https://www.robertswinney.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Robert Swinney — Fuqua School of Business, Duke University" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Robert Swinney" />
+<meta name="twitter:description" content="Professor of Operations Management at Duke University's Fuqua School of Business." />
+<meta name="twitter:image" content="https://www.robertswinney.com/og-image.png" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23012169'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='17' fill='white' text-anchor='middle'%3ERS%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --navy:#012169;        /* Duke Navy Blue (academic) */
+    --royal:#00539B;       /* Duke Royal Blue (accent / links) */
+    --ink:#1f2733;         /* body text */
+    --muted:#5b6472;       /* secondary text */
+    --line:#d8dde5;        /* hairline rules */
+    --bg:#ffffff;
+    --bg-alt:#f5f7fa;      /* cool light panel */
+    --sky:#a9c4e8;         /* light accent on navy */
+
+    --serif:"EB Garamond",Georgia,"Times New Roman",serif;
+    --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+
+    --wrap:1080px;
+    --pad:clamp(1.25rem,5vw,3.25rem);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:var(--sans);font-weight:400;font-size:17px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  .wrap{max-width:var(--wrap);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+
+  /* ---------- Sticky header ---------- */
+  .masthead{
+    position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);
+    backdrop-filter:saturate(140%) blur(8px);-webkit-backdrop-filter:saturate(140%) blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .masthead .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    padding-top:.85rem;padding-bottom:.85rem}
+  .mh-name{font-family:var(--serif);font-weight:600;font-size:1.2rem;color:var(--navy);
+    text-decoration:none;letter-spacing:.005em}
+  .nav{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;justify-content:flex-end}
+  .nav a{
+    font-size:.82rem;letter-spacing:.02em;color:var(--ink);text-decoration:none;
+    padding:.4rem .55rem;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;
+  }
+  .nav a:hover,.nav a.active{color:var(--royal);border-bottom-color:var(--royal)}
+  .nav a.cv{color:var(--royal);font-weight:500}
+
+  /* ---------- Hero (night sky) ---------- */
+  .hero{position:relative;overflow:hidden;color:#fff;
+    background:#031634;
+    background:radial-gradient(120% 150% at 72% 12%,#0a2a5e 0%,#04183c 48%,#020f29 100%)}
+  .sky{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+  .hero .wrap{position:relative;z-index:1;
+    padding-top:clamp(2.75rem,6vw,4.5rem);padding-bottom:clamp(2.75rem,6vw,4.5rem);
+    display:grid;grid-template-columns:1fr auto;gap:clamp(1.5rem,5vw,3.5rem);align-items:center}
+  .hero-text{min-width:0}
+  .hero-name{font-family:var(--serif);font-weight:600;color:#fff;
+    font-size:clamp(2.7rem,7vw,4.9rem);line-height:1.0;letter-spacing:-.005em;margin:0;
+    text-shadow:0 2px 34px rgba(0,0,0,.55)}
+  .hero-titles{margin:1.4rem 0 0;max-width:46ch}
+  .role{font-family:var(--sans);font-weight:500;font-size:clamp(.8rem,1.5vw,.93rem);
+    letter-spacing:.15em;text-transform:uppercase;color:var(--sky);margin:0}
+  .subrole{font-family:var(--serif);font-style:italic;font-weight:400;
+    font-size:clamp(1.2rem,2.3vw,1.55rem);color:#eaf1fb;margin:.5rem 0 0;line-height:1.25}
+  .affil{font-size:.95rem;color:#aebfd9;margin:.85rem 0 0}
+  .affil a{color:#cdd9ee;text-decoration:none;border-bottom:1px solid rgba(173,191,217,.4)}
+  .affil a:hover{color:#fff;border-bottom-color:var(--sky)}
+
+  .links{margin:1.7rem 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:.3rem .85rem;
+    font-size:.92rem}
+  .links a{color:var(--sky);text-decoration:none;font-weight:500;
+    border-bottom:1px solid transparent;transition:color .15s,border-color .15s}
+  .links a:hover{color:#fff;border-bottom-color:var(--sky)}
+  .links .sep{color:rgba(173,191,217,.4);user-select:none}
+
+  /* Portrait */
+  .portrait{position:relative;flex:none;justify-self:center;
+    width:clamp(150px,21vw,206px);height:clamp(150px,21vw,206px)}
+  .portrait img,.portrait-fallback{width:100%;height:100%;border-radius:50%;display:block;
+    object-fit:cover;border:3px solid rgba(255,255,255,.9);
+    box-shadow:0 18px 48px rgba(0,0,0,.5)}
+  .portrait::after{content:"";position:absolute;inset:-9px;border-radius:50%;
+    border:1px solid rgba(169,196,232,.5);box-shadow:0 0 0 7px rgba(3,18,45,.35)}
+  .portrait-fallback{display:none;align-items:center;justify-content:center;
+    background:linear-gradient(160deg,#0a2a5e,#04173a);
+    font-family:var(--serif);font-weight:600;letter-spacing:.02em;color:#fff;
+    font-size:clamp(2.6rem,5vw,3.6rem)}
+
+  /* Constellation */
+  .cnst-lines{opacity:.5}
+  .cnst-lines line{stroke-dasharray:340;stroke-dashoffset:340;animation:draw 1.5s ease forwards}
+  .cnst-lines line:nth-child(1){animation-delay:.20s}
+  .cnst-lines line:nth-child(2){animation-delay:.36s}
+  .cnst-lines line:nth-child(3){animation-delay:.52s}
+  .cnst-lines line:nth-child(4){animation-delay:.68s}
+  .cnst-lines line:nth-child(5){animation-delay:.84s}
+  .cnst-lines line:nth-child(6){animation-delay:1.00s}
+  .cnst-lines line:nth-child(7){animation-delay:1.16s}
+  .cnst-lines line:nth-child(8){animation-delay:1.32s}
+  .cnst-lines line:nth-child(9){animation-delay:.60s}
+  .cnst-lines line:nth-child(10){animation-delay:.92s}
+  .cnst-lines line:nth-child(11){animation-delay:1.20s}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  .tw{animation:tw var(--d,4s) ease-in-out infinite var(--t,0s)}
+  @keyframes tw{0%,100%{opacity:.9}50%{opacity:.28}}
+  .shoot{opacity:0;animation:shoot 12s ease-in-out 4s infinite}
+  @keyframes shoot{
+    0%{opacity:0;transform:translate(250px,60px) rotate(20deg) scaleX(.3)}
+    2.5%{opacity:.85}
+    8%{opacity:0;transform:translate(640px,205px) rotate(20deg) scaleX(1)}
+    100%{opacity:0;transform:translate(640px,205px) rotate(20deg)}
+  }
+
+  /* ---------- Sections ---------- */
+  .section{padding:clamp(3rem,6vw,4.75rem) 0;border-bottom:1px solid var(--line)}
+  .sec-title{font-family:var(--serif);font-weight:600;color:var(--navy);
+    font-size:clamp(1.8rem,3.6vw,2.4rem);line-height:1.1;margin:0 0 .55rem}
+  .sec-rule{width:52px;height:3px;background:var(--royal);border:0;margin:0 0 2.2rem}
+
+  .lead{font-family:var(--serif);font-size:clamp(1.25rem,2.2vw,1.5rem);line-height:1.45;
+    color:var(--navy);max-width:60ch;margin:0 0 1.25rem;font-weight:400}
+  .prose p{max-width:none;margin:0 0 1.1rem;color:var(--ink)}
+  .prose em{font-style:italic}
+  .prose a{color:var(--royal);text-decoration:none;border-bottom:1px solid rgba(0,83,155,.3)}
+  .prose a:hover{border-bottom-color:var(--royal)}
+
+  /* About fact columns */
+  .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:2.2rem 2.6rem;
+    margin-top:2.8rem;padding-top:2.4rem;border-top:1px solid var(--line)}
+  .fact h3{font-family:var(--sans);font-weight:700;font-size:.74rem;letter-spacing:.13em;
+    text-transform:uppercase;color:var(--navy);margin:0 0 1rem}
+  .fact ul{list-style:none;margin:0;padding:0}
+  .fact li{font-size:.93rem;line-height:1.45;color:var(--ink);margin:0 0 .8rem}
+  .fact li strong{color:var(--navy);font-weight:700;font-size:.84rem;letter-spacing:.02em}
+  .fact li .yr{display:block;font-size:.8rem;color:var(--muted);margin-top:.12rem}
+
+  /* Selected / featured work */
+  .selected-label{font-family:var(--sans);font-weight:700;font-size:.74rem;letter-spacing:.13em;
+    text-transform:uppercase;color:var(--navy);margin:0 0 1.2rem}
+  .featured{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin:0 0 2.4rem}
+  .fcard{display:flex;flex-direction:column;text-decoration:none;color:inherit;
+    background:var(--bg-alt);border:1px solid var(--line);border-top:3px solid var(--royal);
+    border-radius:4px;padding:1.25rem 1.3rem 1.35rem;
+    transition:transform .2s ease,box-shadow .2s ease}
+  .fcard:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(1,33,105,.13)}
+  .fcard .fvenue{font-family:var(--sans);font-weight:700;font-size:.62rem;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--royal);margin:0 0 .6rem}
+  .fcard .ftitle{font-family:var(--serif);font-weight:600;font-size:1.12rem;line-height:1.25;
+    color:var(--navy);margin:0 0 .65rem}
+  .fcard:hover .ftitle{text-decoration:underline;text-decoration-thickness:1px;
+    text-underline-offset:2px;text-decoration-color:var(--royal)}
+  .fcard .fwhy{font-size:.87rem;line-height:1.5;color:var(--muted);margin:auto 0 0}
+  .full-label{font-family:var(--sans);font-weight:700;font-size:.74rem;letter-spacing:.13em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 1.8rem;
+    padding-top:1.8rem;border-top:1px solid var(--line)}
+
+  /* Reveal on scroll (applied via JS; content stays visible without JS) */
+  .reveal{opacity:0;transform:translateY(16px);
+    transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* Research */
+  .theme{margin-bottom:2.5rem}
+  .theme:last-child{margin-bottom:0}
+  .theme-h{font-family:var(--sans);font-weight:700;font-size:.82rem;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--navy);margin:0 0 1.1rem;
+    padding-bottom:.55rem;border-bottom:1px solid var(--line)}
+  .pubs{list-style:none;margin:0;padding:0}
+  .pub{padding:.7rem 0;border-bottom:1px solid #eef1f5}
+  .pub:last-child{border-bottom:0}
+  .pub .t{font-weight:500;color:var(--navy);font-size:1.02rem;line-height:1.4}
+  .pub a.t{text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s,color .15s}
+  .pub a.t:hover{color:var(--royal);border-bottom-color:var(--royal)}
+  .pub .m{margin-top:.2rem;font-size:.9rem;color:var(--muted);line-height:1.5}
+  .pub .m .venue{font-style:italic;color:#48515f}
+  .pub .m .wp{font-style:italic}
+
+  /* Media */
+  .media{list-style:none;margin:0;padding:0;columns:2;column-gap:2.8rem}
+  .media li{break-inside:avoid;margin:0 0 .8rem;font-size:.9rem;line-height:1.4}
+  .media a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--line)}
+  .media a:hover{color:var(--royal);border-bottom-color:var(--royal)}
+  .media .src{color:var(--muted)}
+
+  /* Teaching / students */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:2.8rem 3.2rem}
+  .col-h{font-family:var(--sans);font-weight:700;font-size:.82rem;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--navy);margin:0 0 1.2rem;
+    padding-bottom:.55rem;border-bottom:1px solid var(--line)}
+  .sub-h{font-family:var(--serif);font-weight:600;font-style:italic;font-size:1.12rem;
+    color:var(--navy);margin:1.5rem 0 .7rem}
+  .sub-h:first-of-type{margin-top:0}
+  .roster{list-style:none;margin:0;padding:0}
+  .roster li{margin:0 0 .6rem;font-size:.94rem;color:var(--ink);line-height:1.4}
+  .roster a{color:var(--royal);text-decoration:none;border-bottom:1px solid rgba(0,83,155,.3)}
+  .roster a:hover{border-bottom-color:var(--royal)}
+  .roster .meta{color:var(--muted);font-size:.85rem}
+  .awards{list-style:none;margin:0;padding:0}
+  .awards li{display:flex;justify-content:space-between;gap:1rem;align-items:baseline;
+    padding:.5rem 0;border-bottom:1px solid #eef1f5;font-size:.93rem}
+  .awards li:last-child{border-bottom:0}
+  .awards .yr{color:var(--royal);font-weight:500;font-size:.82rem;white-space:nowrap}
+
+  /* ---------- Footer ---------- */
+  .foot{background:var(--navy);color:#fff;padding:1.4rem 0}
+  .colophon{margin:0;font-size:.72rem;letter-spacing:.04em;color:rgba(255,255,255,.7)}
+
+  @media(max-width:760px){
+    .facts{grid-template-columns:1fr;gap:1.9rem}
+    .two{grid-template-columns:1fr;gap:2.2rem}
+    .media{columns:1}
+    .mh-name{font-size:1.05rem}
+    .nav a{padding:.4rem .4rem;font-size:.78rem}
+    .hero .wrap{grid-template-columns:1fr;text-align:center}
+    .portrait{order:-1;margin-bottom:.35rem}
+    .hero-titles{margin-left:auto;margin-right:auto}
+    .links{justify-content:center}
+    .featured{grid-template-columns:1fr;gap:1rem}
+  }
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .tw,.shoot{animation:none}
+    .shoot{display:none}
+    .cnst-lines line{animation:none;stroke-dashoffset:0}
+    .reveal{opacity:1;transform:none;transition:none}
+  }
+  :focus-visible{outline:2px solid var(--royal);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="mh-name" href="#top">Robert Swinney</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#top">Top</a>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+      <a class="cv" href="https://people.duke.edu/~rps23/CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <svg class="sky" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#e3edfd" stop-opacity="0.95"/>
+        <stop offset="38%" stop-color="#9db8e6" stop-opacity="0.30"/>
+        <stop offset="100%" stop-color="#9db8e6" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="nebula" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#1f4a8c" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#1f4a8c" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="meteor" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#cfe0fb" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#eaf2ff" stop-opacity="0.95"/>
+      </linearGradient>
+    </defs>
+
+    <ellipse cx="840" cy="150" rx="540" ry="330" fill="url(#nebula)"/>
+    <g id="starfield"></g>
+
+    <g class="cnst-lines" stroke="#bcd2ef" stroke-width="1" stroke-linecap="round">
+      <line x1="120" y1="170" x2="250" y2="110"/>
+      <line x1="250" y1="110" x2="375" y2="165"/>
+      <line x1="375" y1="165" x2="505" y2="95"/>
+      <line x1="505" y1="95"  x2="640" y2="150"/>
+      <line x1="640" y1="150" x2="775" y2="95"/>
+      <line x1="775" y1="95"  x2="905" y2="175"/>
+      <line x1="905" y1="175" x2="1045" y2="110"/>
+      <line x1="1045" y1="110" x2="1150" y2="185"/>
+      <line x1="505" y1="95"  x2="470" y2="235"/>
+      <line x1="640" y1="150" x2="760" y2="250"/>
+      <line x1="775" y1="95"  x2="800" y2="35"/>
+    </g>
+
+    <g class="cnst-stars" fill="#fff">
+      <g transform="translate(120,170)"><circle r="13" fill="url(#glow)"/><circle r="2.1" class="tw" style="--d:5.2s;--t:.2s"/></g>
+      <g transform="translate(250,110)"><circle r="15" fill="url(#glow)"/><circle r="2.6" class="tw" style="--d:4.4s;--t:1.1s"/></g>
+      <g transform="translate(375,165)"><circle r="12" fill="url(#glow)"/><circle r="1.9" class="tw" style="--d:6.0s;--t:.6s"/></g>
+      <g transform="translate(505,95)"><circle r="18" fill="url(#glow)"/><circle r="3.2" class="tw" style="--d:5.6s;--t:2.0s"/></g>
+      <g transform="translate(470,235)"><circle r="11" fill="url(#glow)"/><circle r="1.7" class="tw" style="--d:4.8s;--t:1.6s"/></g>
+      <g transform="translate(640,150)"><circle r="14" fill="url(#glow)"/><circle r="2.4" class="tw" style="--d:5.0s;--t:.9s"/></g>
+      <g transform="translate(775,95)"><circle r="17" fill="url(#glow)"/><circle r="3.0" class="tw" style="--d:4.2s;--t:2.6s"/></g>
+      <g transform="translate(760,250)"><circle r="11" fill="url(#glow)"/><circle r="1.8" class="tw" style="--d:5.8s;--t:.4s"/></g>
+      <g transform="translate(905,175)"><circle r="13" fill="url(#glow)"/><circle r="2.2" class="tw" style="--d:4.6s;--t:1.9s"/></g>
+      <g transform="translate(1045,110)"><circle r="15" fill="url(#glow)"/><circle r="2.7" class="tw" style="--d:5.4s;--t:.7s"/></g>
+      <g transform="translate(1150,185)"><circle r="12" fill="url(#glow)"/><circle r="2.0" class="tw" style="--d:6.2s;--t:2.3s"/></g>
+      <g transform="translate(800,35)"><circle r="10" fill="url(#glow)"/><circle r="1.6" class="tw" style="--d:5.0s;--t:1.3s"/></g>
+    </g>
+
+    <g class="shoot"><line x1="0" y1="0" x2="52" y2="0" stroke="url(#meteor)" stroke-width="2" stroke-linecap="round"/></g>
+  </svg>
+
+  <div class="wrap">
+    <div class="hero-text">
+      <h1 class="hero-name">Robert Swinney</h1>
+      <div class="hero-titles">
+        <p class="subrole">Professor, Operations Management</p>
+        <p class="affil">
+          <a href="https://www.fuqua.duke.edu" target="_blank" rel="noopener">Fuqua School of Business</a>, Duke University
+        </p>
+      </div>
+      <div class="links">
+        <a href="mailto:robert.swinney@duke.edu">Email</a><span class="sep">/</span>
+        <a href="https://www.linkedin.com/in/robert-swinney-b41aba3/" target="_blank" rel="noopener">LinkedIn</a><span class="sep">/</span>
+        <a href="http://scholar.google.com/citations?user=BfcbRpAAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a><span class="sep">/</span>
+        <a href="http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2331122" target="_blank" rel="noopener">SSRN</a><span class="sep">/</span>
+        <a href="https://orcid.org/0000-0001-5994-6544" target="_blank" rel="noopener">ORCID</a><span class="sep">/</span>
+        <a href="https://people.duke.edu/~rps23/CV.pdf" target="_blank" rel="noopener">CV</a>
+      </div>
+    </div>
+
+    <div class="portrait">
+      <img src="headshot.jpg" alt="Robert Swinney"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="portrait-fallback" aria-hidden="true">RS</div>
+    </div>
+  </div>
+</section>
+
+<main>
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="wrap">
+    <h2 class="sec-title">About</h2>
+    <hr class="sec-rule" />
+    <div class="prose">
+      <p>Robert Swinney is Senior Associate Dean for Programs and a professor in the <a href="https://areas.fuqua.duke.edu/operations-management/" target="_blank" rel="noopener">Operations Management</a> area of the Duke University Fuqua School of Business.</p>
+      <p>His research focuses on strategic problems in operations and supply chain management, including the operational implications of consumer behavior, sustainability and social responsibility in supply chains, start-up and platform operations, and supply and demand risk in supply chains.</p>
+      <p>His work has been published in journals such as <em>Management Science</em>, <em>Operations Research</em>, <em>Manufacturing &amp; Service Operations Management</em>, and <em>Marketing Science</em>. He is currently a Department Editor at <em>Manufacturing &amp; Service Operations Management</em> and has held associate and senior editor positions at <em>Management Science</em>, <em>Manufacturing &amp; Service Operations Management</em>, and <em>Production &amp; Operations Management</em>.</p>
+      <p>Prior to joining Fuqua, he received a B.S. in Astronomy from the California Institute of Technology, a Ph.D. in Operations Management from the Wharton School of the University of Pennsylvania, and was an associate professor at the Stanford University Graduate School of Business.</p>
+    </div>
+
+    <div class="facts">
+      <div class="fact">
+        <h3>Research Interests</h3>
+        <ul>
+          <li>Operations and supply chain strategy</li>
+          <li>Operational implications of consumer behavior</li>
+          <li>Sustainability and social responsibility in supply chains</li>
+          <li>Start-up and platform operations</li>
+          <li>Supply and demand risk in supply chains</li>
+        </ul>
+      </div>
+      <div class="fact">
+        <h3>Academic Positions</h3>
+        <ul>
+          <li><strong>Duke University, Fuqua School of Business</strong></li>
+          <li>Senior Associate Dean for Programs<span class="yr">Jul 2025 – Present</span></li>
+          <li>Senior Associate Dean, Executive MBA &amp; Quantitative Management Programs<span class="yr">Jan 2025 – Jul 2025</span></li>
+          <li>Professor<span class="yr">2023 – Present</span></li>
+          <li>Associate Professor<span class="yr">2013 – 2023</span></li>
+          <li><strong>Stanford University, Graduate School of Business</strong></li>
+          <li>Associate Professor<span class="yr">2012 – 2013</span></li>
+          <li>Assistant Professor<span class="yr">2008 – 2012</span></li>
+        </ul>
+      </div>
+      <div class="fact">
+        <h3>Education</h3>
+        <ul>
+          <li>Ph.D., Operations Management<span class="yr">2008 · The Wharton School, University of Pennsylvania</span></li>
+          <li>B.S., Astronomy<span class="yr">2002 · California Institute of Technology</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESEARCH ===== -->
+<section class="section" id="research">
+  <div class="wrap">
+    <h2 class="sec-title">Research</h2>
+    <hr class="sec-rule" />
+
+    <p class="selected-label">Selected work</p>
+    <div class="featured" id="featured">
+      <a class="fcard" href="https://doi.org/10.1287/mnsc.2022.4390" target="_blank" rel="noopener">
+        <p class="fvenue">Management Science · 2023</p>
+        <p class="ftitle">Managing Relationships Between Restaurants and Food Delivery Platforms: Conflict, Contracts, and Coordination</p>
+        <p class="fwhy">Why commission-based contracts between restaurants and delivery apps so often breed conflict — and how revenue-sharing terms can be designed to align both sides.</p>
+      </a>
+      <a class="fcard" href="https://doi.org/10.1287/msom.2022.0152" target="_blank" rel="noopener">
+        <p class="fvenue">Manufacturing &amp; Service Operations Management · 2023</p>
+        <p class="ftitle">Sustainability Implications of Supply Chain Responsiveness</p>
+        <p class="fwhy">Whether a firm builds its supply chain for speed or for cost reshapes its carbon footprint — and when a responsive supply chain is the greener choice.</p>
+      </a>
+      <a class="fcard" href="https://people.duke.edu/~rps23/VerticalControl.pdf" target="_blank" rel="noopener">
+        <p class="fvenue">Working paper</p>
+        <p class="ftitle">Building Supply Chain Resilience Through Vertical Control</p>
+        <p class="fwhy">When owning more of the supply chain, rather than contracting at arm's length, is the right lever for building resilience against disruption.</p>
+      </a>
+    </div>
+
+    <p class="full-label">All publications by topic</p>
+
+    <div class="theme">
+      <h3 class="theme-h">Social &amp; Environmental Responsibility</h3>
+      <ul class="pubs">
+        <li class="pub">
+          <span class="t">Outsourcing, Reshoring, and Carbon Emissions in Supply Chains</span>
+          <div class="m">with Ali Kaan Tuna · <span class="wp">working paper</span></div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/msom.2022.0152" target="_blank" rel="noopener">Sustainability Implications of Supply Chain Responsiveness</a>
+          <div class="m">with Ali Kaan Tuna · <span class="venue">Manufacturing &amp; Service Operations Management</span>, Vol. 25, No. 6, 2023</div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/msom.2021.1063" target="_blank" rel="noopener">Managing Social Responsibility in Multitier Supply Chains</a>
+          <div class="m">with Lu Huang and Jeannette Song · <span class="venue">Manufacturing &amp; Service Operations Management</span>, Vol. 24, No. 6, 2022</div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/mnsc.2015.2256" target="_blank" rel="noopener">Responsible Sourcing in Supply Chains</a>
+          <div class="m">with Ruixue Guo and Hau Lee · <span class="venue">Management Science</span>, Vol. 62, No. 9, 2016</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="theme">
+      <h3 class="theme-h">Platform Operations</h3>
+      <ul class="pubs">
+        <li class="pub">
+          <a class="t" href="http://people.duke.edu/~rps23/OrderStacking.pdf" target="_blank" rel="noopener">Order Stacking in On-Demand Delivery Platforms</a>
+          <div class="m">with Bora Keskin and James Scott · <span class="wp">working paper</span></div>
+        </li>
+        <li class="pub">
+          <a class="t" href="http://people.duke.edu/~rps23/SubscriptionPlatforms.pdf" target="_blank" rel="noopener">Revenue Sharing and Subscription Platforms for Digital Content Distribution</a>
+          <div class="m">with Zhenhuan Lei · <span class="wp">working paper</span></div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/mnsc.2022.4390" target="_blank" rel="noopener">Managing Relationships Between Restaurants and Food Delivery Platforms: Conflict, Contracts, and Coordination</a>
+          <div class="m">with Pnina Feldman and Andrew Frazelle · <span class="venue">Management Science</span>, Vol. 69, No. 2, 2023</div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1002/nav.22081" target="_blank" rel="noopener">Designing Rewards-Based Crowdfunding Campaigns for Strategic (but Distracted) Contributors</a>
+          <div class="m">with Soudipta Chakraborty and Anyi Ma · <span class="venue">Naval Research Logistics</span>, Vol. 70, No. 1, 2023</div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/msom.2021.1025" target="_blank" rel="noopener">Intertemporal Content Variation with Customer Learning</a>
+          <div class="m">with Fernando Bernstein and Soudipta Chakraborty · <span class="venue">Manufacturing &amp; Service Operations Management</span>, Vol. 24, No. 3, 2022</div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/msom.2019.0833" target="_blank" rel="noopener">Signaling to the Crowd: Private Quality Information and Rewards-Based Crowdfunding</a>
+          <div class="m">with Soudipta Chakraborty · <span class="venue">Manufacturing &amp; Service Operations Management</span>, Vol. 23, No. 1, 2021</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="theme">
+      <h3 class="theme-h">Supply &amp; Demand Risk in Supply Chains</h3>
+      <ul class="pubs">
+        <li class="pub">
+          <a class="t" href="https://people.duke.edu/~rps23/GenericDrugCertification.pdf" target="_blank" rel="noopener">Mitigating Shortages of Generic Drugs: The Role of Reliability Certification</a>
+          <div class="m">with Xiaoyu Wu and Can Zhang · <span class="wp">working paper</span></div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://people.duke.edu/~rps23/VerticalControl.pdf" target="_blank" rel="noopener">Building Supply Chain Resilience Through Vertical Control</a>
+          <div class="m">with Nitin Bakshi and Ali Kaan Tuna · <span class="wp">working paper</span></div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/mksc.2017.1041" target="_blank" rel="noopener">Product Quality in a Distribution Channel with Inventory Risk</a>
+          <div class="m">with Kinshuk Jerath and Sang-Hyun Kim · <span class="venue">Marketing Science</span>, Vol. 36, No. 5, 2017</div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/mnsc.2016.2471" target="_blank" rel="noopener">Disruption Risk and Optimal Sourcing in Multitier Supply Networks</a>
+          <div class="m">with Erjie Ang and Dan Iancu · <span class="venue">Management Science</span>, Vol. 63, No. 8, 2017</div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/mnsc.1110.1309" target="_blank" rel="noopener">Capacity Investment Timing by Start-ups and Established Firms in New Markets</a>
+          <div class="m">with Gérard Cachon and Serguei Netessine · <span class="venue">Management Science</span>, Vol. 57, No. 4, 2011</div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/msom.1070.0199" target="_blank" rel="noopener">Long-Term Contracts Under the Threat of Supplier Default</a>
+          <div class="m">with Serguei Netessine · <span class="venue">Manufacturing &amp; Service Operations Management</span>, Vol. 11, No. 1, 2009</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="theme">
+      <h3 class="theme-h">Strategic Customer Behavior &amp; Operations</h3>
+      <ul class="pubs">
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/opre.2020.2084" target="_blank" rel="noopener">Inventory Integration with Rational Consumers</a>
+          <div class="m">with Arian Aflaki · <span class="venue">Operations Research</span>, Vol. 69, No. 4, 2021</div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/opre.2019.1937" target="_blank" rel="noopener">Becoming Strategic: Endogenous Consumer Time Preferences and Multiperiod Pricing</a>
+          <div class="m">with Arian Aflaki and Pnina Feldman · <span class="venue">Operations Research</span>, Vol. 68, No. 4, 2020</div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/mnsc.1110.1360" target="_blank" rel="noopener">Selling to Strategic Consumers When Product Value is Uncertain: The Value of Matching Supply and Demand</a>
+          <div class="m"><span class="venue">Management Science</span>, Vol. 57, No. 10, 2011</div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/mnsc.1100.1303" target="_blank" rel="noopener">The Value of Fast Fashion: Quick Response, Enhanced Design, and Strategic Consumer Behavior</a>
+          <div class="m">with Gérard Cachon · <span class="venue">Management Science</span>, Vol. 57, No. 4, 2011</div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://doi.org/10.1287/mnsc.1080.0948" target="_blank" rel="noopener">Purchasing, Pricing, and Quick Response in the Presence of Strategic Consumers</a>
+          <div class="m">with Gérard Cachon · <span class="venue">Management Science</span>, Vol. 55, No. 3, 2009</div>
+        </li>
+        <li class="pub">
+          <a class="t" href="https://people.duke.edu/~rps23/CS_BookChapter.pdf" target="_blank" rel="noopener">The Impact of Strategic Consumer Behavior on the Value of Operational Flexibility</a>
+          <div class="m">with Gérard Cachon · Ch. 14 in <span class="venue">Consumer-Driven Demand and Operations Management Models</span>, Springer, 2009</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="theme">
+      <h3 class="theme-h">Other Topics</h3>
+      <ul class="pubs">
+        <li class="pub">
+          <a class="t" href="https://dx.doi.org/10.1016/S0168-9002%2803%2901362-7" target="_blank" rel="noopener">Novel Technique for Ultra-Sensitive Determination of Trace Elements in Organic Scintillators</a>
+          <div class="m">with Z. Djurcic, D. Glasgow, L.-W. Hu, R. D. McKeown, A. Piepke, and B. Tipton · <span class="venue">Nuclear Instruments and Methods in Physics Research A</span>, Vol. 507, No. 3, 2003</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="theme">
+      <h3 class="theme-h">Selected Media</h3>
+      <ul class="media">
+        <li><a href="https://www.fuqua.duke.edu/duke-fuqua-insights/assessing-environmental-cost-supply-chains" target="_blank" rel="noopener">Assessing the Environmental Cost of Supply Chains</a> <span class="src">— Fuqua Insights, 2023</span></li>
+        <li><a href="https://www.fuqua.duke.edu/duke-fuqua-insights/better-revenue-sharing-system-food-delivery-services" target="_blank" rel="noopener">A Better Revenue Sharing System for Food Delivery Services</a> <span class="src">— Fuqua Insights, 2023</span></li>
+        <li><a href="https://insights.bu.edu/new-recipe-for-restaurant-app-contract/" target="_blank" rel="noopener">New Recipe for Restaurant, App Contract</a> <span class="src">— Questrom, 2022</span></li>
+        <li><a href="https://news.utdallas.edu/business-management/food-delivery-study-2022/" target="_blank" rel="noopener">UTD Researchers Deliver New Recipe for Restaurant, App Contracts</a> <span class="src">— UT Dallas, 2022</span></li>
+        <li><a href="https://www.youtube.com/watch?v=BW81rY1m9iM" target="_blank" rel="noopener">Understanding the Supply Chain Crisis</a> <span class="src">— Fuqua LinkedIn Live, 2021</span></li>
+        <li><a href="https://www.youtube.com/watch?v=HFjPP6ej32M" target="_blank" rel="noopener">Operations During a Pandemic</a> <span class="src">— Fuqua LinkedIn Live, 2020</span></li>
+        <li><a href="https://www.fuqua.duke.edu/duke-fuqua-insights/robert-swinney-bargain-hunters-paradox" target="_blank" rel="noopener">A Bargain Hunter's Paradox</a> <span class="src">— Fuqua Insights, 2020</span></li>
+        <li><a href="http://www.bu.edu/questrom/2019/12/12/how-to-get-consumers-to-buy-now-not-later-and-love-it/" target="_blank" rel="noopener">To Buy or Not to Buy</a> <span class="src">— Questrom, 2019</span></li>
+        <li><a href="https://www.fuqua.duke.edu/duke-fuqua-insights/swinney-crowdfunding" target="_blank" rel="noopener">How to Succeed at Crowdfunding</a> <span class="src">— Fuqua Insights, 2019</span></li>
+        <li><a href="https://www.gsb.stanford.edu/insights/how-big-brands-can-cultivate-ethical-suppliers" target="_blank" rel="noopener">How Big Brands Can Cultivate Ethical Suppliers</a> <span class="src">— Stanford Business, 2016</span></li>
+        <li><a href="https://www.fuqua.duke.edu/duke-fuqua-insights/swinney-sourcing" target="_blank" rel="noopener">Paying More for Responsible Sourcing Can Encourage the Opposite</a> <span class="src">— Fuqua Insights, 2016</span></li>
+        <li><a href="https://www.gsb.stanford.edu/insights/outsourcing-may-hurt-fashion-manufacturers-bottom-line" target="_blank" rel="noopener">Outsourcing May Be Slowing Down Apparel Firms</a> <span class="src">— Stanford Business, 2010</span></li>
+        <li><a href="https://knowledge.wharton.upenn.edu/article/here-today-discounted-tomorrow-strategic-shoppers-know-when-to-buy-and-at-what-price/" target="_blank" rel="noopener">Here Today, Discounted Tomorrow</a> <span class="src">— Knowledge@Wharton, 2007</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEACHING & STUDENTS ===== -->
+<section class="section" id="teaching">
+  <div class="wrap">
+    <h2 class="sec-title">Students &amp; Teaching</h2>
+    <hr class="sec-rule" />
+    <div class="two">
+      <div>
+        <h3 class="col-h">Doctoral Students</h3>
+        <h4 class="sub-h">Advisees</h4>
+        <ul class="roster">
+          <li>Xiaoyu Wu</li>
+          <li><a href="https://www.alikaantuna.com" target="_blank" rel="noopener">Ali Kaan Tuna</a> <span class="meta">— 2024 · Tilburg University</span></li>
+          <li><a href="https://soudipta.com" target="_blank" rel="noopener">Soudipta Chakraborty</a> <span class="meta">— 2020 · University of Kansas</span></li>
+          <li>Zhenhuan Lei <span class="meta">— 2019 · industry</span></li>
+          <li><a href="http://www.pitt.edu/~aaflaki/" target="_blank" rel="noopener">Arian Aflaki</a> <span class="meta">— 2017 · University of Pittsburgh</span></li>
+          <li>Ruixue Guo <span class="meta">— 2015 · industry</span></li>
+        </ul>
+        <h4 class="sub-h">Non-Advisee Student Co-Authors</h4>
+        <ul class="roster">
+          <li>James Scott</li>
+          <li><a href="https://business.gwu.edu/yuan-guo" target="_blank" rel="noopener">Yuan Guo</a> <span class="meta">— 2023</span></li>
+          <li><a href="http://utdallas.edu/~aef180002" target="_blank" rel="noopener">Andrew Frazelle</a> <span class="meta">— 2018</span></li>
+          <li>Erjie Ang <span class="meta">— 2015</span></li>
+          <li>Lu Huang <span class="meta">— 2015</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="col-h">Teaching</h3>
+        <h4 class="sub-h">Awards</h4>
+        <ul class="awards">
+          <li><span>Fuqua Daytime MBA Elective Teaching Award</span><span class="yr">2026</span></li>
+          <li><span>Fuqua Daytime MBA Core Teaching Award</span><span class="yr">2018, 2020</span></li>
+        </ul>
+        <h4 class="sub-h">Duke Fuqua Courses</h4>
+        <ul class="roster">
+          <li>Operations Strategy <span class="meta">— Daytime MBA / EMBA Elective</span></li>
+          <li>Operations Management <span class="meta">— Daytime MBA Core, WEMBA Core</span></li>
+          <li>Technological Transformation of Business <span class="meta">— Daytime MBA Core, with Sasa Pekec</span></li>
+          <li>Supply Chain Models <span class="meta">— Ph.D.</span></li>
+          <li>Operations Management Models <span class="meta">— Ph.D., with Can Zhang</span></li>
+          <li>Emerging Topics in Operations Management <span class="meta">— Ph.D., with OM Area Faculty</span></li>
+        </ul>
+        <h4 class="sub-h">Stanford GSB Courses</h4>
+        <ul class="roster">
+          <li>Operations <span class="meta">— MBA / Sloan Masters Core</span></li>
+          <li>Special Topics in Supply Chain Management <span class="meta">— Ph.D., with Hau Lee</span></li>
+        </ul>
+        <h4 class="sub-h">Executive &amp; Non-Degree</h4>
+        <ul class="roster">
+          <li>Operations Management and Strategy <span class="meta">— Fuqua Exec Ed, with Fernando Bernstein &amp; Kevin Shang</span></li>
+          <li>Leading Business Strategy Through Operational Excellence <span class="meta">— Fuqua Exec Ed, with Fernando Bernstein &amp; Kevin Shang</span></li>
+          <li>Operations <span class="meta">— Stanford Summer Institute for General Management</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="foot">
+  <div class="wrap">
+    <p class="colophon">© <span id="yr"></span> Robert Swinney</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  (function(){
+    var links = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="#"]'));
+    var map = {}; links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          links.forEach(function(l){ l.classList.remove('active'); });
+          if(map[e.target.id]) map[e.target.id].classList.add('active');
+        }
+      });
+    }, { rootMargin:'-45% 0px -50% 0px', threshold:0 });
+    ['top','about','research','teaching'].forEach(function(id){
+      var el = document.getElementById(id); if(el) io.observe(el);
+    });
+  })();
+
+  // Layered background starfield for depth
+  (function(){
+    var field = document.getElementById('starfield');
+    if(!field) return;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var SVGNS = 'http://www.w3.org/2000/svg';
+    var N = 78, frag = document.createDocumentFragment();
+    for(var i=0;i<N;i++){
+      var c = document.createElementNS(SVGNS,'circle');
+      c.setAttribute('cx', (Math.random()*1200).toFixed(1));
+      c.setAttribute('cy', (Math.random()*600).toFixed(1));
+      var r = (Math.random()*1.1 + 0.4);
+      c.setAttribute('r', r.toFixed(2));
+      var base = (0.22 + Math.random()*0.55);
+      c.setAttribute('fill', Math.random() < 0.18 ? '#bcd2ef' : '#ffffff');
+      c.setAttribute('opacity', base.toFixed(2));
+      if(!reduce && Math.random() < 0.5){
+        c.setAttribute('class','tw');
+        c.style.setProperty('--d', (3.5 + Math.random()*4).toFixed(1) + 's');
+        c.style.setProperty('--t', (Math.random()*5).toFixed(1) + 's');
+      }
+      frag.appendChild(c);
+    }
+    field.appendChild(frag);
+  })();
+
+  // Subtle reveal-on-scroll. Classes are added by JS only, so content is
+  // fully visible if JS is disabled or motion is reduced.
+  (function(){
+    if(!('IntersectionObserver' in window)) return;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduce) return;
+    var sel = '.section .sec-title, .prose, .facts, .selected-label, .featured, .full-label, .theme, .two';
+    var els = Array.prototype.slice.call(document.querySelectorAll(sel));
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin:'0px 0px -8% 0px', threshold:0.06 });
+    els.forEach(function(el){ el.classList.add('reveal'); io.observe(el); });
+  })();
+
+  // Featured work: show 3 papers chosen at random from a larger set on each load.
+  (function(){
+    var box = document.getElementById('featured');
+    if(!box) return;
+    var slots = Array.prototype.slice.call(box.querySelectorAll('.fcard'));
+    if(slots.length < 3) return;
+    var data = [
+      { href:'https://doi.org/10.1287/mnsc.2022.4390',
+        venue:'Management Science · 2023',
+        title:'Managing Relationships Between Restaurants and Food Delivery Platforms: Conflict, Contracts, and Coordination',
+        why:'Why commission-based contracts between restaurants and delivery apps so often breed conflict — and how revenue-sharing terms can be designed to align both sides.' },
+      { href:'https://doi.org/10.1287/msom.2022.0152',
+        venue:'Manufacturing &amp; Service Operations Management · 2023',
+        title:'Sustainability Implications of Supply Chain Responsiveness',
+        why:'Whether a firm builds its supply chain for speed or for cost reshapes its carbon footprint — and when a responsive supply chain is the greener choice.' },
+      { href:'https://people.duke.edu/~rps23/VerticalControl.pdf',
+        venue:'Working paper',
+        title:'Building Supply Chain Resilience Through Vertical Control',
+        why:'When owning more of the supply chain, rather than contracting at arm\u2019s length, is the right lever for building resilience against disruption.' },
+      { href:'https://people.duke.edu/~rps23/GenericDrugCertification.pdf',
+        venue:'Working paper',
+        title:'Mitigating Shortages of Generic Drugs: The Role of Reliability Certification',
+        why:'Why shortages of generic drugs persist, and how certifying manufacturer reliability could realign incentives to keep supply flowing.' },
+      { href:'http://people.duke.edu/~rps23/OrderStacking.pdf',
+        venue:'Working paper',
+        title:'Order Stacking in On-Demand Delivery Platforms',
+        why:'How the platform practice of bundling multiple orders onto a single courier affects delivery speed, couriers, and customers — and how to manage it.' }
+    ];
+    // Fisher–Yates shuffle, then take the first three
+    for(var i=data.length-1;i>0;i--){
+      var j=Math.floor(Math.random()*(i+1)), t=data[i]; data[i]=data[j]; data[j]=t;
+    }
+    for(var k=0;k<3;k++){
+      var d=data[k], slot=slots[k];
+      slot.setAttribute('href', d.href);
+      slot.innerHTML = '<p class="fvenue">'+d.venue+'</p>'+
+                       '<p class="ftitle">'+d.title+'</p>'+
+                       '<p class="fwhy">'+d.why+'</p>';
+    }
+  })();
+</script>
+
+</body>
+</html>
