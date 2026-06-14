@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#012169" />
 <title>Robert Swinney</title>
 <meta name="description" content="Robert Swinney — Senior Associate Dean for Programs and Professor of Operations Management at Duke University's Fuqua School of Business." />
 
@@ -21,6 +22,41 @@
 <meta name="twitter:description" content="Professor of Operations Management at Duke University's Fuqua School of Business." />
 <meta name="twitter:image" content="https://www.robertswinney.com/og-image.png" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23012169'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='17' fill='white' text-anchor='middle'%3ERS%3C/text%3E%3C/svg%3E" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Robert Swinney",
+  "url": "https://www.robertswinney.com/",
+  "image": "https://www.robertswinney.com/headshot.jpg",
+  "jobTitle": ["Professor of Operations Management", "Senior Associate Dean for Programs"],
+  "email": "robert.swinney@duke.edu",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "The Fuqua School of Business, Duke University",
+    "url": "https://www.fuqua.duke.edu"
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "California Institute of Technology" },
+    { "@type": "CollegeOrUniversity", "name": "University of Pennsylvania" }
+  ],
+  "knowsAbout": [
+    "Operations management",
+    "Supply chain management",
+    "Platform operations",
+    "Strategic consumer behavior",
+    "Sustainability in supply chains"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/robert-swinney-b41aba3/",
+    "https://scholar.google.com/citations?user=BfcbRpAAAAAJ",
+    "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2331122",
+    "https://orcid.org/0000-0001-5994-6544"
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
@@ -249,9 +285,17 @@
     .reveal{opacity:1;transform:none;transition:none}
   }
   :focus-visible{outline:2px solid var(--royal);outline-offset:3px}
+  .skip-link{position:absolute;left:8px;top:-52px;z-index:100;
+    background:var(--navy);color:#fff;padding:.6rem 1rem;border-radius:0 0 6px 6px;
+    font-family:var(--sans);font-size:.85rem;font-weight:500;text-decoration:none;
+    transition:top .15s ease}
+  .skip-link:focus{top:0}
+  #main:focus{outline:none}
 </style>
 </head>
 <body>
+
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="masthead">
   <div class="wrap">
@@ -347,7 +391,7 @@
   </div>
 </section>
 
-<main>
+<main id="main" tabindex="-1">
 <!-- ===== ABOUT ===== -->
 <section class="section" id="about">
   <div class="wrap">
